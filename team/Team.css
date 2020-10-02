@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ body {
+  font-family: tahoma;
+  /* height: 350vh; */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.meet-the-team {
+  text-align: center;
+}
+
+.our-team {
+  padding: -500px 0 -500px;
+  margin-bottom: 30px;
+ 
+  background-color: #f7f5ec;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 48%;
+  background-color: #e75428;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3.2);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #e75428;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.8s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.8);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
+  /*for adding social media handles*/
+  margin-bottom: 40px;
+}
+.name-d {
+  font-size: 20px;
+}
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #e75428;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #1369ce;
+  background-color: #f7f5ec;
+}
+
+/* .container {
+margin-top: 150vh;
+} */
+
+ /*mobile, laptop view */
+/* @media only screen and (max-width: 600px) {
+  .container {
+    margin-top: 1260vh;
+  }
+} 
+
+
+@media only screen and (min-width: 601px) {
+  .container {
+    margin-top: 250vh;
+  }
+} 
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin-top: 1120vh;
+  }
+}
+
+@media only screen and (min-width: 993px) and up {
+  .container {
+    margin-top: 950vh;
+  }
+} */
+
+
+.our-team .img-xs {
+  width: 110px;
+  height: 110px;
+}
+
+
+.footer{
+  width: 110%;
+  margin-left: -20px;
+}
+
+
+.footer-icons{
+  margin-top: 25px;
+  }
+  
+.footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+  
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+    margin-right: 3px;
+  margin-bottom: 5px;
+  }
+.footer-icons :hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  }
+
+  .container-fluid {
+    overflow: hidden;
+  }
