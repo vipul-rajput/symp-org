@@ -40,7 +40,7 @@
 
 
 
-*,
+
 :after,
 :before {
   box-sizing: border-box;
@@ -245,4 +245,15 @@ body {
 
 .container {
   margin: 60px auto 0;
+}
+
+
+
+@media (max-width: 756px) and (min-width: 576px){
+.col-sm-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 100%;
+    margin-left: 13%;
+}
 }
