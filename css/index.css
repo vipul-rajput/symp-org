@@ -241,3 +241,38 @@ body {
 .container {
     margin: 60px auto 0;
 }
+
+@media(min-width:320px){
+    .container{
+        width: 320px;
+    }
+
+    .bg-img {
+       max-width: 100%;
+        height: 100px;
+        transition: .2s ease;
+    }
+}
+@media(min-width:481px) {
+    .container {
+        width: 481px;
+    }
+    
+}
+
+@media(min-width:641px) {
+    .container {
+        width: 641px;
+    }
+}
+
+@media(min-width:961px) {
+    .container {
+        width: 961px;
+    }
+}
+@media(min-width:1000px) {
+    .container {
+        width: 1000px;
+    }
+}
